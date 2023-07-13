@@ -1,0 +1,146 @@
+body {
+  width: 250px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#edit-mode-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.edit-mode #social-icons {
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0.5;
+}
+
+.iconos {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.iconos li {
+  margin: 0 5px;
+  display: inline-block;
+  position: relative; /* Agregar posición relativa */
+}
+
+.iconos li a {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos li a:hover {
+  background-color: rgb(196, 192, 2);
+}
+
+.iconos li.selected a {
+  background-color: #059b00;
+}
+
+
+.iconos li span {
+  visibility: hidden;
+  position: absolute;
+  top: -20px; /* Ajustar la posición vertical del nombre */
+  left: 50%; /* Centrar horizontalmente el nombre */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2px 5px; /* Ajustar el padding para reducir el tamaño */
+  font-size: 80%; /* Reducir el tamaño de la fuente al 80% */
+  border-radius: 5px;
+  white-space: nowrap; /* Evitar que el texto se ajuste al ancho */
+}
+
+.iconos li span.show {
+  visibility: visible;
+}
+
+
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+h6 {
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.creditoT{
+  text-align: right;
+}
+
+.credit{
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.credit:hover {
+  color: rgb(196, 192, 2);
+}
+
+img{
+  position: fixed; 
+  top: 20px; 
+  right: 30px; 
+  width: 50px; 
+  height: auto;
+}
+
+
+.volverBtn{
+  background-color: black;
+  border: black;
+}
+
+.volverBtn:hover {
+  background-color: rgb(196, 192, 2);
+  color: black;
+}
+
+.textocredit{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+#edit-mode-btn:hover{
+  background-color: rgb(196, 192, 2);
+  color: black;
+}
